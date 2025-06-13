@@ -4,22 +4,45 @@ This repository contains my completed tasks for the Data Science & Analytics Int
 
 ---
 
-## ✅ Task 1: Exploring and Visualizing the Iris Dataset
+# Credit Risk Prediction & Data Exploration
 
-### Objective:
-Explore the Iris dataset using Python to understand the data structure and create visualizations using Seaborn and Matplotlib.
-
-### What I did:
-- Loaded the Iris dataset using seaborn
-- Explored data structure using `.shape`, `.columns`, and `.info()`
-- Created scatter plots, histograms, and box plots
-- Wrote observations and conclusions based on the visuals
-
-### File:
-- `Task1_Iris_Exploration.ipynb`
+## 📌 Objective
+This project contains two tasks:
+1. **Task 1**: Explore and visualize the Iris dataset
+2. **Task 2**: Predict loan approval using classification models
 
 ---
-# Credit Risk Prediction
+
+## 🧪 Task 1: Exploring and Visualizing a Simple Dataset (Iris)
+
+### 🎯 Goal
+Understand how to read, summarize, and visualize a dataset using pandas, matplotlib, and seaborn.
+
+### 📂 Dataset
+- **Source:** Built-in Iris dataset from the `seaborn` library
+
+### 🔍 What Was Done
+- Loaded the dataset using `seaborn.load_dataset()`
+- Displayed dataset structure using:
+  - `.shape`
+  - `.columns`
+  - `.head()`
+- Created visualizations:
+  - **Scatter Plot** (petal length vs width by species)
+  - **Histogram** (distribution of sepal length)
+  - **Box Plot** (sepal length by species)
+
+### 🛠️ Tools Used
+- Python (Jupyter Notebook)
+- pandas, seaborn, matplotlib
+
+### 📁 Files
+- `iris_visualization.ipynb`: Notebook for Task 1 (Iris exploration)
+
+
+---
+
+# Task 2 Credit Risk Prediction
 
 ## 📌 Objective
 The goal of this project is to predict whether a loan applicant is likely to default on a loan. This is done by training a classification model using a real-world loan dataset.
