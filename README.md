@@ -181,87 +181,68 @@ Predict whether a customer will leave (churn) from a bank using classification t
 
 📌 Objective
 
-Predict the medical insurance charges for individuals based on personal and lifestyle data using regression modeling.
+Estimate the insurance charges for individuals based on personal attributes using a regression model.
 
 📂 Dataset
 
-Source: Kaggle - Medical Cost Personal Dataset
+Source: Medical Cost Personal Dataset on Kaggle
 
-Features:
+Features include:
 
-age: Age of primary beneficiary
+age, sex, bmi, children, smoker, region
 
-sex: Gender
+charges (target variable: insurance cost)
 
-bmi: Body mass index
+🔍 Exploratory Data Analysis
 
-children: Number of dependents
+Age vs Charges: Scatter plot revealed a positive trend.
 
-smoker: Smoking status (yes/no)
+BMI vs Charges: Charges tend to increase with BMI.
 
-region: Residential area
+Smoker vs Charges: Smokers had much higher charges on average.
 
-charges: Medical insurance cost (target variable)
+🧹 Data Preprocessing
 
-🧹 Data Cleaning
+Verified no missing values.
 
-Checked for missing values (✅ none found)
-
-Applied One-Hot Encoding for categorical variables:
-
-sex, region, smoker
-
-📊 Exploratory Data Analysis
-
-Visualized how key features impact insurance charges:
-
-Age vs Charges: Older individuals generally had higher charges
-
-BMI vs Charges: High BMI often correlated with higher charges
-
-Smoker vs Charges: Smokers had significantly higher insurance charges
+Applied One-Hot Encoding to categorical variables: sex, region, smoker.
 
 🤖 Model Training
 
-Used Linear Regression to model the relationship between features and charges
+Model used: Linear Regression
 
-Split data into training and testing sets (80/20)
+Features selected: All numerical and encoded categorical features
 
-Trained using sklearn.linear_model.LinearRegression
+Split data into 80% training and 20% testing
 
 📏 Model Evaluation
 
-Evaluated model performance using:
+Mean Absolute Error (MAE): Indicates average error in predictions
 
-Mean Absolute Error (MAE): Average error in predictions
+Root Mean Squared Error (RMSE): Penalizes larger errors more heavily
 
-Root Mean Squared Error (RMSE): Penalty for larger prediction errors
+🛠️ Tools and Libraries
 
-Both metrics were printed in the notebook and reflect the model’s ability to predict medical costs reasonably well.
+Python (Jupyter Notebook)
 
-🛠️ Tools Used
-
-Python, Jupyter Notebook
-
-pandas, seaborn, matplotlib, numpy, scikit-learn
+Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
 
 📁 Files in This Repo
 
-insurance_cost_prediction.ipynb: Main notebook with analysis and regression model
+insurance_cost_prediction.ipynb: Main notebook
 
 insurance.csv: Dataset
 
-README.md: This file
+README.md: Project overview
 
 ✅ Skills Demonstrated
 
 Regression modeling
 
-Data visualization and feature correlation
+Feature encoding and visualization
 
-Encoding categorical data
+Model evaluation using MAE and RMSE
 
-Evaluating model error (MAE and RMSE)
 
 
 ---
