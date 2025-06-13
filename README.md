@@ -177,13 +177,13 @@ Predict whether a customer will leave (churn) from a bank using classification t
 
 ---
 
-  Task 4 Medical Insurance Cost Prediction
+  ## Task 4 Medical Insurance Cost Prediction
 
-📌 Objective
+## 📌 Objective
 
 Estimate the insurance charges for individuals based on personal attributes using a regression model.
 
-📂 Dataset
+## 📂 Dataset
 
 Source: Medical Cost Personal Dataset on Kaggle
 
@@ -193,7 +193,7 @@ age, sex, bmi, children, smoker, region
 
 charges (target variable: insurance cost)
 
-🔍 Exploratory Data Analysis
+## 🔍 Exploratory Data Analysis
 
 Age vs Charges: Scatter plot revealed a positive trend.
 
@@ -201,13 +201,13 @@ BMI vs Charges: Charges tend to increase with BMI.
 
 Smoker vs Charges: Smokers had much higher charges on average.
 
-🧹 Data Preprocessing
+## 🧹 Data Preprocessing
 
 Verified no missing values.
 
 Applied One-Hot Encoding to categorical variables: sex, region, smoker.
 
-🤖 Model Training
+## 🤖 Model Training
 
 Model used: Linear Regression
 
@@ -215,7 +215,7 @@ Features selected: All numerical and encoded categorical features
 
 Split data into 80% training and 20% testing
 
-📏 Model Evaluation
+## 📏 Model Evaluation
 
 Mean Absolute Error (MAE): Indicates average error in predictions
 
