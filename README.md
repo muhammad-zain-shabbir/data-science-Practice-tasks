@@ -175,6 +175,60 @@ Predict whether a customer will leave (churn) from a bank using classification t
 - Training and evaluating classification models
 - Interpreting model output and visualizing results
 
+---
+Task4 Predicting Insurance Claim Amounts
+## 📊 Model Preparation
+- Split features (`X`) and target (`y`)
+- Used 80/20 train/test split
+
+---
+
+## 🤖 Models Used
+### 1. **Random Forest Classifier** (for churn prediction)
+- Evaluated using Accuracy and Confusion Matrix
+
+### 2. **Linear Regression** (for insurance cost prediction)
+- Evaluated using MAE and RMSE
+
+---
+
+## 📏 Model Evaluation Results
+### Churn Prediction:
+- **Accuracy Score:** ~83%
+- **Confusion Matrix:** Displayed in notebook
+
+### Insurance Cost Prediction:
+- **MAE (Mean Absolute Error):** Indicates average prediction error
+- **RMSE (Root Mean Squared Error):** Highlights size of errors
+
+---
+
+## 📈 Visualizations
+- **Churn Task:** Age vs Exit, Income vs Exit, Geography vs Exit (Bar plots, Histograms)
+- **Insurance Task:** Age vs Charges, BMI vs Charges, Smoker vs Charges
+
+---
+
+## 🛠️ Tools Used
+- Python, Jupyter Notebook
+- Libraries: `pandas`, `numpy`, `seaborn`, `matplotlib`, `sklearn`
+
+---
+
+## 📁 Files in This Repo
+- `customer_churn_prediction.ipynb`: Notebook for Task 3
+- `insurance_cost_prediction.ipynb`: Notebook for Task 4
+- `churn_data.csv`, `insurance.csv`: Datasets
+- `README.md`: Project summary and steps
+
+---
+
+## ✅ Skills Demonstrated
+- Data cleaning and transformation
+- Categorical encoding
+- Classification and Regression modeling
+- Model evaluation and visualization
+
 
 ---
 
