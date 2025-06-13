@@ -221,13 +221,13 @@ Mean Absolute Error (MAE): Indicates average error in predictions
 
 Root Mean Squared Error (RMSE): Penalizes larger errors more heavily
 
-🛠️ Tools and Libraries
+## 🛠️ Tools and Libraries
 
 Python (Jupyter Notebook)
 
 Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn
 
-📁 Files in This Repo
+## 📁 Files in This Repo
 
 insurance_cost_prediction.ipynb: Main notebook
 
@@ -235,13 +235,13 @@ insurance.csv: Dataset
 
 README.md: Project overview
 
-✅ Skills Demonstrated
+## ✅ Skills Demonstrated
 
 Regression modeling
 
 Feature encoding and visualization
 
-Model evaluation using MAE and RMSE
+# Model evaluation using MAE and RMSE
 
 ---
 
