@@ -243,6 +243,66 @@ Feature encoding and visualization
 
 Model evaluation using MAE and RMSE
 
+---
+
+# Task 5 Personal Loan Acceptance Prediction
+
+## 📌 Objective
+Predict whether a customer will accept a personal loan offer based on demographic and marketing data.
+
+---
+
+## 📂 Dataset
+- **Source:** [Bank Marketing Dataset - UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
+- **Format:** Semicolon-separated CSV (`bank-additional-full.csv`)
+- **Target:** `y` (binary — yes/no for loan acceptance)
+
+---
+
+## 🔍 Exploratory Data Analysis (EDA)
+- **Age vs Acceptance:** Younger users more likely to accept
+- **Job Type vs Acceptance:** Admin and technician roles showed higher acceptance
+- **Marital Status vs Acceptance:** Singles were more likely to accept
+
+---
+
+## 🧹 Data Preprocessing
+- One-Hot Encoding applied to all categorical variables using `pd.get_dummies()`
+- Cleaned and prepared for modeling
+
+---
+
+## 🤖 Model Training
+- **Model Used:** Logistic Regression
+- **Data Split:** 80% training, 20% testing
+- **Solver:** lbfgs with increased iterations to ensure convergence
+
+---
+
+## 📏 Evaluation
+- **Accuracy Score:** Reported for test set
+- **Confusion Matrix:** Displayed to evaluate prediction categories
+- **(Optional)** Classification report used for precision, recall, f1-score
+
+---
+
+## 💡 Key Insights
+- **Age, job, and marital status** significantly influence acceptance
+- Singles and certain job roles had higher acceptance rates
+
+---
+
+## 🛠️ Tools Used
+- Python (Jupyter Notebook)
+- `pandas`, `seaborn`, `matplotlib`
+- `scikit-learn` for model training and evaluation
+
+---
+
+## 📁 Files in This Repo
+- `loan_acceptance_prediction.ipynb`: Jupyter notebook with all analysis
+- `bank-additional-full.csv`: Dataset (from UCI)
+- `README.md`: Summary and project details
 
 
 ---
