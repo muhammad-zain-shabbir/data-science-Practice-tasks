@@ -10,7 +10,9 @@ This repository contains my completed tasks for the Data Science & Analytics Int
 This project contains two tasks:
 1. **Task 1**: Explore and visualize the Iris dataset
 2. **Task 2**: Predict loan approval using classification models
-
+3. **Task 3**: Predict whether a customer will leave (churn) from a bank using classification techniques
+4. **Task 4**: Estimate the insurance charges for individuals based on personal attributes using a regression model
+5. **Task 5**: Predict whether a customer will accept a personal loan offer based on demographic and marketing data
 ---
 
 ## 🧪 Task 1: Exploring and Visualizing a Simple Dataset (Iris)
