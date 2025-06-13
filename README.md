@@ -102,7 +102,7 @@ The goal of this project is to predict whether a loan applicant is likely to def
 
 ---
 
-# Customer Churn Prediction - Bank Customers
+# Task 3 Customer Churn Prediction - Bank Customers
 
 ## 📌 Objective
 Predict whether a customer will leave (churn) from a bank using classification techniques.
