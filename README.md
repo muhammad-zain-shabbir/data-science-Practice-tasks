@@ -7,7 +7,7 @@ This repository contains my completed tasks for the Data Science & Analytics Int
 # Credit Risk Prediction & Data Exploration
 
 ## 📌 Objective
-This project contains two tasks:
+This project contains five tasks:
 1. **Task 1**: Explore and visualize the Iris dataset
 2. **Task 2**: Predict loan approval using classification models
 3. **Task 3**: Predict whether a customer will leave (churn) from a bank using classification techniques
