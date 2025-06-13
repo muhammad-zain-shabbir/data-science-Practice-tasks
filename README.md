@@ -176,58 +176,92 @@ Predict whether a customer will leave (churn) from a bank using classification t
 - Interpreting model output and visualizing results
 
 ---
-Task4 Predicting Insurance Claim Amounts
-## 📊 Model Preparation
-- Split features (`X`) and target (`y`)
-- Used 80/20 train/test split
 
----
+  Task 4 Medical Insurance Cost Prediction
 
-## 🤖 Models Used
-### 1. **Random Forest Classifier** (for churn prediction)
-- Evaluated using Accuracy and Confusion Matrix
+📌 Objective
 
-### 2. **Linear Regression** (for insurance cost prediction)
-- Evaluated using MAE and RMSE
+Predict the medical insurance charges for individuals based on personal and lifestyle data using regression modeling.
 
----
+📂 Dataset
 
-## 📏 Model Evaluation Results
-### Churn Prediction:
-- **Accuracy Score:** ~83%
-- **Confusion Matrix:** Displayed in notebook
+Source: Kaggle - Medical Cost Personal Dataset
 
-### Insurance Cost Prediction:
-- **MAE (Mean Absolute Error):** Indicates average prediction error
-- **RMSE (Root Mean Squared Error):** Highlights size of errors
+Features:
 
----
+age: Age of primary beneficiary
 
-## 📈 Visualizations
-- **Churn Task:** Age vs Exit, Income vs Exit, Geography vs Exit (Bar plots, Histograms)
-- **Insurance Task:** Age vs Charges, BMI vs Charges, Smoker vs Charges
+sex: Gender
 
----
+bmi: Body mass index
 
-## 🛠️ Tools Used
-- Python, Jupyter Notebook
-- Libraries: `pandas`, `numpy`, `seaborn`, `matplotlib`, `sklearn`
+children: Number of dependents
 
----
+smoker: Smoking status (yes/no)
 
-## 📁 Files in This Repo
-- `customer_churn_prediction.ipynb`: Notebook for Task 3
-- `insurance_cost_prediction.ipynb`: Notebook for Task 4
-- `churn_data.csv`, `insurance.csv`: Datasets
-- `README.md`: Project summary and steps
+region: Residential area
 
----
+charges: Medical insurance cost (target variable)
 
-## ✅ Skills Demonstrated
-- Data cleaning and transformation
-- Categorical encoding
-- Classification and Regression modeling
-- Model evaluation and visualization
+🧹 Data Cleaning
+
+Checked for missing values (✅ none found)
+
+Applied One-Hot Encoding for categorical variables:
+
+sex, region, smoker
+
+📊 Exploratory Data Analysis
+
+Visualized how key features impact insurance charges:
+
+Age vs Charges: Older individuals generally had higher charges
+
+BMI vs Charges: High BMI often correlated with higher charges
+
+Smoker vs Charges: Smokers had significantly higher insurance charges
+
+🤖 Model Training
+
+Used Linear Regression to model the relationship between features and charges
+
+Split data into training and testing sets (80/20)
+
+Trained using sklearn.linear_model.LinearRegression
+
+📏 Model Evaluation
+
+Evaluated model performance using:
+
+Mean Absolute Error (MAE): Average error in predictions
+
+Root Mean Squared Error (RMSE): Penalty for larger prediction errors
+
+Both metrics were printed in the notebook and reflect the model’s ability to predict medical costs reasonably well.
+
+🛠️ Tools Used
+
+Python, Jupyter Notebook
+
+pandas, seaborn, matplotlib, numpy, scikit-learn
+
+📁 Files in This Repo
+
+insurance_cost_prediction.ipynb: Main notebook with analysis and regression model
+
+insurance.csv: Dataset
+
+README.md: This file
+
+✅ Skills Demonstrated
+
+Regression modeling
+
+Data visualization and feature correlation
+
+Encoding categorical data
+
+Evaluating model error (MAE and RMSE)
 
 
 ---
