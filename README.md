@@ -102,6 +102,82 @@ The goal of this project is to predict whether a loan applicant is likely to def
 
 ---
 
+# Customer Churn Prediction - Bank Customers
+
+## 📌 Objective
+Predict whether a customer will leave (churn) from a bank using classification techniques.
+
+---
+
+## 📂 Dataset
+- **Source:** Churn Modelling Dataset (Kaggle)
+- Includes features such as:
+  - CreditScore, Geography, Gender, Age
+  - Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary
+  - `Exited` (target: 1 = left the bank, 0 = stayed)
+
+---
+
+## 🧹 Data Cleaning
+- Checked for missing values (✅ none found)
+- Dropped irrelevant columns: `RowNumber`, `CustomerId`, `Surname`
+
+---
+
+## 🔤 Feature Encoding
+- Applied **Label Encoding** to `Gender` (Male=1, Female=0)
+- Applied **One-Hot Encoding** to `Geography` (France dropped to avoid dummy trap)
+
+---
+
+## 📊 Model Preparation
+- Features stored in `X`, target (`Exited`) in `y`
+- Split into training and testing sets (80/20 split)
+
+---
+
+## 🤖 Model Training
+- Model used: **Random Forest Classifier**
+- Trained using `X_train`, `y_train`
+- Made predictions on `X_test`
+
+---
+
+## 📏 Model Evaluation
+- **Accuracy Score:** Displayed in notebook
+- **Confusion Matrix:** Displayed to show prediction breakdown
+
+---
+
+## 📈 Feature Importance
+- Analyzed using `model.feature_importances_`
+- Visualized with `seaborn.barplot`
+- Top predictors: Age, EstimatedSalary, CreditScore, Balance
+
+---
+
+## 🛠️ Tools Used
+- **Python**, Jupyter Notebook
+- Libraries: `pandas`, `numpy`, `seaborn`, `matplotlib`, `sklearn`
+
+---
+
+## 📁 Files in This Repo
+- `customer_churn_prediction.ipynb`: Complete analysis and model training notebook
+- `Churn_Modelling.csv`: Dataset used
+- `README.md`: This file
+
+---
+
+## ✅ Skills Demonstrated
+- Data preprocessing and cleaning
+- Categorical encoding
+- Training and evaluating classification models
+- Interpreting model output and visualizing results
+
+
+---
+
 💡 *This project was created as part of a learning task to develop and demonstrate beginner-level data science skills.*
 ---
 More tasks coming soon!
